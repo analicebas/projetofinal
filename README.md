@@ -1,78 +1,75 @@
-# 🏁 GP 8 — Grand Prix SENAI
+# GP 8 — Grand Prix SENAI
 
 ## 📌 Escopo do Projeto
 
 ### Problema
-O site atual do Grand Prix apresenta dificuldades para os alunos participantes, pois as demandas de diferentes unidades do SENAI aparecem misturadas, dificultando a escolha. Além disso, os requisitos para envio das propostas nem sempre são apresentados com antecedência, e as datas-limite das etapas não ficam claras, causando dúvidas, atrasos e desmotivação.
+Atualmente, o site do Grand Prix apresenta dificuldades que prejudicam a experiência dos alunos participantes. As demandas de diferentes unidades do SENAI aparecem misturadas, dificultando a escolha dos desafios. Além disso, os requisitos para envio das propostas nem sempre são apresentados antecipadamente, e as datas-limite de cada etapa não ficam claras, causando dúvidas, atrasos e desmotivação.
 
 ### Objetivo
-Desenvolver um site responsivo para organizar e facilitar a participação dos alunos no Grand Prix do SENAI, permitindo consultar demandas, visualizar requisitos, acompanhar prazos e enviar propostas de solução de maneira simples e organizada.
+Desenvolver uma plataforma web responsiva para organizar e facilitar a participação dos alunos no Grand Prix SENAI, permitindo consultar demandas da própria unidade, visualizar requisitos, acompanhar prazos, enviar propostas e verificar o andamento das soluções.
 
 ### Público-alvo
 - Alunos do SENAI que participam do Grand Prix.
-- Professores que acompanham os alunos e suas propostas.
-- Equipe organizadora responsável pelo gerenciamento das demandas, dos eventos e das propostas.
+- Professores responsáveis pelo acompanhamento dos alunos e suas propostas.
+- Equipe organizadora responsável pelo gerenciamento das demandas, eventos, usuários e propostas.
 
 ### Solução
-O projeto propõe o desenvolvimento de uma plataforma web que organiza as demandas de acordo com a unidade do aluno, apresenta antecipadamente os requisitos e as datas-limite de cada etapa e permite o envio e o acompanhamento das propostas.
+O projeto propõe o desenvolvimento de uma plataforma web que centraliza e organiza as informações do Grand Prix SENAI.
 
-O sistema também contará com áreas específicas para alunos, professores e organizadores, além de notificações, histórico de propostas e ferramentas administrativas para facilitar o gerenciamento do Grand Prix.
+O sistema permitirá que os alunos visualizem demandas vinculadas à sua unidade, consultem antecipadamente os requisitos de cada desafio, acompanhem as datas-limite e enviem suas propostas de solução.
+
+Também contará com áreas específicas para alunos, professores e organizadores, além de notificações, histórico de propostas e ferramentas administrativas.
 
 ### Principais funcionalidades
-- **Cadastro e login:** acesso ao sistema conforme o perfil do usuário.
-- **Filtragem de demandas:** exibição das demandas disponíveis para a unidade do aluno.
-- **Detalhes das demandas:** apresentação dos requisitos, formatos de arquivo aceitos e instruções de entrega antes do envio.
-- **Prazos e calendário:** visualização das datas-limite de cada etapa.
-- **Envio de propostas:** submissão de arquivos com validação do formato e do tamanho permitido.
-- **Acompanhamento de propostas:** consulta ao status e ao histórico dos envios.
-- **Notificações:** avisos sobre prazos e atualizações importantes.
-- **Painel administrativo:** gerenciamento de usuários, unidades, eventos, demandas e propostas.
-- **Histórico de edições:** consulta às demandas e propostas de edições anteriores do Grand Prix.
+- Cadastro e login de usuários com diferentes perfis.
+- Identificação e filtragem de demandas de acordo com a unidade do aluno.
+- Cadastro e gerenciamento de demandas vinculadas aos eventos e unidades.
+- Exibição antecipada dos requisitos e formatos de arquivos aceitos.
+- Calendário com datas-limite de cada etapa.
+- Envio de propostas com validação de arquivos.
+- Acompanhamento do status das propostas enviadas.
+- Histórico de demandas e propostas de edições anteriores.
+- Notificações sobre prazos e atualizações.
+- Painel administrativo para gerenciamento do sistema.
+- Área do professor para acompanhamento e avaliação das propostas.
 
 ## 🎨 Design System
 
 ### Cores
-
-- **Cor primária — Azul-marinho (`#101B35`):** utilizado no cabeçalho, no menu lateral e no rodapé, transmitindo profissionalismo e tecnologia.
-- **Cor secundária — Vermelho Grand Prix (`#E63946`):** utilizado nos botões principais, nas ações importantes e nos elementos de destaque.
-- **Cor de fundo — Cinza-claro (`#F1F4F9`):** utilizado no fundo das páginas e das áreas de conteúdo.
-- **Cor de texto — Cinza-escuro (`#293449`):** utilizado nos textos principais, títulos e descrições.
-- **Ciano tecnológico (`#35C6F4`):** utilizado em links, indicadores e detalhes interativos.
-- **Branco (`#FFFFFF`):** utilizado nos cartões, formulários e áreas de conteúdo.
-- **Verde (`#218838`):** utilizado em mensagens de sucesso e indicadores positivos.
-- **Amarelo (`#F2B544`):** utilizado em alertas e avisos de prazos.
+- **Cor primária:** Azul-marinho (`#101B35`) — utilizado no menu lateral, cabeçalho e elementos principais.
+- **Cor secundária:** Vermelho Grand Prix (`#E63946`) — utilizado nos botões principais e ações importantes.
+- **Cor de fundo:** Cinza-claro (`#F1F4F9`) — utilizado no fundo das páginas.
+- **Cor de texto:** Cinza-escuro (`#293449`) — utilizado nos títulos e textos principais.
+- **Ciano tecnológico:** (`#35C6F4`) — utilizado em links, indicadores e elementos interativos.
+- **Branco:** (`#FFFFFF`) — utilizado nos cartões, formulários e áreas de conteúdo.
+- **Verde:** (`#218838`) — utilizado em mensagens de sucesso e indicadores positivos.
+- **Amarelo:** (`#F2B544`) — utilizado em alertas e avisos de prazos.
 
 ### 🔤 Tipografia
-
-- **Fonte principal:** Inter, por apresentar boa legibilidade e uma aparência moderna.
-- **Títulos:** Inter em negrito, para destacar os nomes das páginas e as informações principais.
-- **Subtítulos:** Inter em seminegrito, para organizar as seções e os conteúdos.
-- **Texto:** Inter em estilo regular, garantindo uma leitura confortável e clara.
+- **Fonte principal:** Inter, por apresentar boa legibilidade e aparência moderna.
+- **Títulos:** Inter em negrito, para destacar nomes das páginas e informações principais.
+- **Subtítulos:** Inter em seminegrito, para organizar as seções.
+- **Texto:** Inter em estilo regular, garantindo uma leitura confortável.
 
 ### 🔷 Logotipo
+O logotipo do GP 8 — Grand Prix SENAI terá uma identidade visual moderna e tecnológica, representando inovação, criatividade, colaboração e desenvolvimento de soluções.
 
-O logotipo do GP 8 — Grand Prix SENAI foi pensado para representar velocidade, competição, tecnologia e inovação.
+O design utilizará as letras "GP 8" em destaque, acompanhadas do nome Grand Prix SENAI. A identidade visual combinará azul-marinho, vermelho, branco e ciano.
 
-A identidade visual combina as letras “GP” em destaque com elementos inspirados no automobilismo, como a bandeira quadriculada e linhas que transmitem movimento.
-
-O design utiliza azul-marinho como base, vermelho e branco para destacar o nome Grand Prix e ciano para representar tecnologia. A identificação SENAI aparece na parte inferior.
-
-O logotipo será aplicado no cabeçalho do site, na página inicial, na tela de login e em outros espaços de identificação do sistema.
+O logotipo será aplicado no cabeçalho, na página inicial, na tela de login e nas demais áreas de identificação da plataforma.
 
 ## 🛠️ Tecnologias
-
-- **HTML5:** utilizado para estruturar as páginas do site.
-- **CSS3:** responsável pela aparência, pelas cores, pelo layout e pela responsividade.
-- **JavaScript:** utilizado para adicionar interatividade e realizar validações no navegador.
-- **PHP:** responsável pelo processamento das informações no servidor, pela autenticação e pelas operações do sistema.
-- **MySQL:** utilizado para armazenar os dados dos usuários, unidades, eventos, demandas e propostas.
-- **Git:** utilizado para controlar as versões do código e acompanhar as alterações.
-- **GitHub:** utilizado para hospedar o repositório e facilitar o trabalho colaborativo da equipe.
-- **Trello ou GitHub Projects:** utilizado para organizar as tarefas e acompanhar o desenvolvimento do projeto.
+- **HTML5:** estruturação das páginas.
+- **CSS3:** estilização, identidade visual e responsividade.
+- **JavaScript:** interatividade e validações no navegador.
+- **PHP:** processamento das informações, autenticação e comunicação com o banco de dados.
+- **MySQL:** armazenamento dos dados dos usuários, unidades, eventos, demandas e propostas.
+- **Git:** controle de versões do código.
+- **GitHub:** hospedagem do repositório e colaboração entre os integrantes.
+- **Trello ou GitHub Projects:** organização e acompanhamento das tarefas.
 
 ## 👥 Equipe
-
 - Ana Luiza
-- Nathaly
-- Matheus
+- Hellvig
 - Sebastian
+- Nathaly

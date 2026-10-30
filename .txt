@@ -1,148 +1,150 @@
-Vamos montar o projeto do zero!
-A ideia é desenvolver um site para facilitar a participação dos alunos no Grand Prix do SENAI, organizando as demandas, os prazos e o envio das propostas em um só lugar.
+# 🏁 GP 8 — Grand Prix SENAI
 
-Minha sugestão é criar um site com aparência de plataforma profissional de tecnologia e inovação, com uma identidade visual inspirada em automobilismo, velocidade e competição, mas sem ficar exagerada.
+## 1. 💡 Como será o site?
 
-Vamos organizar o projeto em etapas para que vocês consigam desenvolver, apresentar e explicar o sistema ao professor.
-1. 💡 Como será o site?
+O GP 8 será uma plataforma web para facilitar a participação dos alunos no Grand Prix SENAI, reunindo demandas, requisitos, prazos e envio de propostas em um único ambiente.
+
 O sistema terá três perfis principais:
-Perfil	O que poderá fazer
-🎓 Aluno	Visualizar demandas da própria unidade, consultar requisitos, enviar propostas e acompanhar o andamento.
-👨‍🏫 Professor	Consultar demandas, acompanhar as propostas dos alunos e visualizar atualizações relacionadas à participação.
-🛠️ Organização	Cadastrar unidades, eventos e demandas, definir prazos, consultar propostas e gerenciar o sistema.
 
+| Perfil | Funcionalidades |
+|---|---|
+| 🎓 Aluno | Consultar demandas, enviar propostas e acompanhar resultados. |
+| 👨‍🏫 Professor | Acompanhar alunos, propostas e atualizações. |
+| 🛠️ Organização | Gerenciar usuários, unidades, eventos, demandas e prazos. |
 
-Cada perfil terá acesso às funcionalidades necessárias para suas atividades.
-Principais páginas
-Área pública e acesso
-- Página inicial com apresentação do Grand Prix.
-- Página de login.
-- Página de cadastro.
+### Principais páginas
+
+**Área pública:**
+- Página inicial.
+- Login e cadastro.
 - Recuperação de senha.
-Área do aluno
-- Painel inicial com resumo das atividades.
-- Demandas disponíveis para sua unidade.
-- Detalhes da demanda e requisitos de entrega.
-- Formulário para envio de propostas.
-- Minhas propostas e respectivos status.
-- Calendário de prazos.
-- Central de notificações.
-Área do professor
-- Painel para acompanhar os alunos e as propostas.
-- Consulta às demandas.
-- Visualização dos prazos e das atualizações.
-Área da organização
-- Gerenciamento de usuários e perfis.
-- Cadastro de unidades e eventos.
-- Cadastro, edição e encerramento de demandas.
-- Configuração dos requisitos de entrega.
-- Gerenciamento dos prazos.
-- Consulta e gerenciamento das propostas.
-- Histórico das edições do Grand Prix.
-Uma parte importante do projeto será permitir que o aluno veja os requisitos de uma demanda antes de começar a elaborar e enviar sua proposta.
-2. 🎨 Paleta de cores do Grand Prix
-Minha sugestão é usar uma identidade visual com azul-escuro, vermelho de competição e ciano tecnológico. Essas cores combinam com o conceito de Grand Prix e ajudam a deixar a interface moderna.
-Paleta proposta
-Cor	Código	Aplicação
-🔵 Azul-marinho	#101B35	Cabeçalho, menu lateral e rodapé.
-🔴 Vermelho Grand Prix	#E63946	Botões principais, ações e destaques.
-🔷 Ciano tecnológico	#35C6F4	Links, indicadores e detalhes interativos.
-⚪ Branco	#FFFFFF	Cartões e áreas de conteúdo.
-🌫️ Cinza-claro	#F1F4F9	Fundo das páginas internas.
-⚫ Cinza-escuro	#293449	Textos principais e títulos.
-🟢 Verde	#218838	Confirmações e propostas aprovadas.
-🟠 Amarelo	#F2B544	Alertas de prazo e situações pendentes.
 
+**Área do aluno:**
+- Dashboard.
+- Demandas disponíveis.
+- Detalhes e requisitos.
+- Envio de propostas.
+- Minhas propostas.
+- Calendário e notificações.
 
-Como ficará a identidade visual:
-- O azul-marinho dará uma aparência profissional.
-- O vermelho destacará os botões de ação, como "Ver demanda" e "Enviar proposta".
-- O ciano será usado em detalhes tecnológicos.
-- O verde e o amarelo ajudarão a diferenciar os status das propostas.
-Exemplo de status:
-- 🟡 Pendente de análise.
-- 🔵 Em análise.
-- 🟢 Aprovada.
-- 🔴 Recusada.
-As cores não devem ser a única forma de identificar o status: cada situação também terá um texto.
-3. 🔤 Tipografia
-Para manter o desenvolvimento simples, recomendo utilizar fontes gratuitas e fáceis de integrar ao site.
-Elemento	Fonte	Estilo
-Fonte principal	Inter	Leitura geral do site.
-Títulos	Inter	Negrito, com destaque.
-Subtítulos	Inter	Seminegrito.
-Textos	Inter	Regular, com boa legibilidade.
-Botões	Inter	Seminegrito.
+**Área do professor:**
+- Painel de acompanhamento.
+- Consulta de demandas e propostas.
+- Visualização de prazos.
 
+**Área administrativa:**
+- Gerenciamento de usuários e unidades.
+- Cadastro de eventos e demandas.
+- Gerenciamento de prazos e propostas.
+- Histórico de edições.
 
-A fonte Inter pode ser obtida gratuitamente no Google Fonts.
+===
 
-7. 🗄️ Como organizar o banco de dados
-O banco de dados será uma parte essencial do projeto.
+## 2. 🎨 Identidade visual
 
-Sugiro começar com estas tabelas:
-Tabela	O que armazenará
-usuarios	Nome, e-mail, senha protegida, perfil e unidade.
-unidades	Identificação das unidades do SENAI.
-eventos	Edições e informações dos eventos Grand Prix.
-demandas	Descrição, unidade, evento, requisitos e prazos.
-propostas	Arquivos enviados, aluno responsável, data e status.
-etapas	Etapas da competição e respectivas datas-limite.
-notificacoes	Avisos destinados aos usuários.
-historico_status	Mudanças de situação das propostas.
+O projeto utilizará um design tecnológico, moderno e profissional, com tema claro e interface responsiva.
 
+### Paleta de cores
 
-As tabelas deverão estar relacionadas para que o sistema consiga, por exemplo, identificar quais demandas pertencem a determinada unidade e quais propostas foram enviadas para cada demanda.
-Exemplo de funcionamento
-1. A organização cadastra uma demanda para determinada unidade.
-2. O aluno entra no sistema.
-3. O sistema identifica a unidade vinculada à conta dele.
-4. As demandas são filtradas de acordo com essa unidade e as regras de participação do evento.
-5. O aluno abre uma demanda e consulta os requisitos, o formato de entrega e o prazo.
-6. O aluno envia sua proposta.
-7. O sistema valida o arquivo no servidor e registra a proposta.
-8. O aluno acompanha o status no painel pessoal.
-Assim, resolvemos o principal problema descrito no escopo do projeto.
-8. 📋 Organização da equipe
-Para facilitar o trabalho, vocês podem dividir as responsabilidades entre os três integrantes.
-Integrante	Responsabilidade inicial
-Ana	Interface, identidade visual e páginas do aluno.
-Matheus	Banco de dados e integração com o PHP.
-Nathaly	Funcionalidades administrativas, documentação e testes.
+| Cor | Código | Aplicação |
+|---|---|---|
+| 🔵 Azul-marinho | `#101B35` | Menu e cabeçalho. |
+| 🔴 Vermelho | `#E63946` | Botões e destaques. |
+| 🔷 Ciano | `#35C6F4` | Links e detalhes. |
+| ⚪ Branco | `#FFFFFF` | Cartões e formulários. |
+| 🌫️ Cinza-claro | `#F1F4F9` | Fundo das páginas. |
+| ⚫ Cinza-escuro | `#293449` | Textos e títulos. |
+| 🟢 Verde | `#218838` | Confirmações. |
+| 🟡 Amarelo | `#F2B544` | Alertas e prazos. |
 
+### 🔤 Tipografia
+- Fonte principal: Inter.
+- Títulos: Inter em negrito.
+- Subtítulos: Inter seminegrito.
+- Textos: Inter regular.
 
-Essa divisão é apenas uma sugestão inicial. Vocês podem adaptar as tarefas de acordo com o que cada integrante já sabe fazer.
+### 🔷 Logotipo
+O logotipo terá o nome GP 8 — Grand Prix SENAI, com identidade visual voltada à tecnologia, inovação e desenvolvimento de soluções.
 
-Todos deverão utilizar o GitHub para compartilhar as alterações. O ideal é criar tarefas pequenas, registrar quem está trabalhando em cada uma e revisar as mudanças antes de integrá-las ao projeto.
-9. 🚀 Ordem de desenvolvimento
-Para não ficar confuso, sugiro seguir esta sequência:
+===
 
-Etapa 1 — Preparação
-- Criar a pasta do projeto.
-- Configurar o repositório no GitHub.
-- Criar a estrutura básica de arquivos.
-- Definir a paleta de cores e os componentes visuais.
-Etapa 2 — Interface
-- Criar a página inicial.
-- Desenvolver o login e o cadastro.
-- Criar o painel do aluno.
-- Desenvolver a listagem e os detalhes das demandas.
-Etapa 3 — Banco de dados e back-end
+## 3. 🗄️ Banco de dados
+
+Utilizaremos MySQL para armazenar e organizar as informações do sistema.
+
+| Tabela | Função |
+|---|---|
+| usuarios | Cadastro e perfis dos usuários. |
+| unidades | Unidades do SENAI. |
+| eventos | Edições do Grand Prix. |
+| demandas | Desafios e requisitos. |
+| etapas | Datas e prazos. |
+| propostas | Soluções enviadas pelos alunos. |
+| arquivos | Anexos das propostas. |
+| notificacoes | Avisos e atualizações. |
+| historico_status | Alterações nas propostas. |
+
+===
+
+## 4. ⚙️ Tecnologias
+
+- **HTML5:** estrutura das páginas.
+- **CSS3:** identidade visual e responsividade.
+- **JavaScript:** interatividade e validações.
+- **PHP:** processamento e funcionalidades do sistema.
+- **MySQL:** armazenamento dos dados.
+- **Git:** controle de versões.
+- **GitHub:** compartilhamento e colaboração.
+- **Trello:** organização das tarefas.
+
+===
+
+## 5. 👥 Equipe
+
+| Integrante | Responsabilidade inicial |
+|---|---|
+| Ana Luiza | Interface e páginas do aluno. |
+| Hellvig | Desenvolvimento e funcionalidades PHP. |
+| Sebastian | Banco de dados e integração. |
+| Nathaly | Área administrativa, documentação e testes. |
+
+Todos participarão da integração, revisão e apresentação do projeto.
+
+===
+
+## 6. 🚀 Etapas de desenvolvimento
+
+**Etapa 1 — Preparação**
+- Criar a estrutura de pastas.
+- Configurar Git e GitHub.
+- Definir a identidade visual.
+
+**Etapa 2 — Interface**
+- Criar página inicial e login.
+- Desenvolver dashboards.
+- Criar páginas de demandas e propostas.
+
+**Etapa 3 — Banco de dados**
 - Criar o banco MySQL.
-- Implementar cadastro e autenticação.
-- Configurar os perfis e as permissões.
-- Implementar a filtragem das demandas por unidade.
-Etapa 4 — Propostas
-- Criar o formulário de envio.
-- Validar os formatos e tamanhos dos arquivos no servidor.
-- Registrar as propostas.
-- Implementar o acompanhamento de status.
-Etapa 5 — Administração
-- Criar o painel da organização.
-- Implementar o gerenciamento de demandas e prazos.
-- Desenvolver o histórico e as notificações.
-Etapa 6 — Finalização
-- Testar o sistema com os três perfis.
-- Verificar a responsividade.
-- Corrigir erros e revisar a segurança.
-- Preparar a documentação técnica e o manual do usuário.
+- Implementar conexão com PHP.
+- Desenvolver cadastro e autenticação.
+
+**Etapa 4 — Funcionalidades**
+- Filtrar demandas por unidade.
+- Exibir requisitos e prazos.
+- Implementar envio e acompanhamento de propostas.
+
+**Etapa 5 — Administração**
+- Gerenciar usuários, eventos e demandas.
+- Implementar notificações e histórico.
+
+**Etapa 6 — Finalização**
+- Testar o sistema.
+- Corrigir erros.
+- Desenvolver documentação técnica e manual do usuário.
+
+===
+
+## 7. 🎯 Resultado esperado
+
+Desenvolver uma plataforma organizada, responsiva e funcional que facilite a participação dos alunos no Grand Prix SENAI, melhore a comunicação entre os participantes e a organização e torne o gerenciamento de demandas e propostas mais eficiente.
